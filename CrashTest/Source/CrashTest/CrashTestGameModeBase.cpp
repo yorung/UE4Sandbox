@@ -2,3 +2,11 @@
 
 #include "CrashTestGameModeBase.h"
 
+ACrashTestGameModeBase::ACrashTestGameModeBase()
+{
+}
+
+void ACrashTestGameModeBase::BeginPlay()
+{
+	*((uint32*)0x4) = 3;
+}

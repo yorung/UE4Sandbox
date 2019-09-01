@@ -13,5 +13,9 @@ UCLASS()
 class CRASHTEST_API ACrashTestGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+
+	ACrashTestGameModeBase();
+
+	virtual void BeginPlay() override;
 };
